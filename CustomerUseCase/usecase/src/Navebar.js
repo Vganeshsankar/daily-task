@@ -1,0 +1,23 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+export const Navebar=()=>
+{
+    return(
+        <nav className="navbar navbar-dark bg-dark">
+        <div className="container-fluid">
+          <a className="navbar-brand mx-3 mx-lg-5">Zealous Bank</a>
+  
+          <form className="d-flex">
+            <Link
+              className="btn btn-outline-light mx-3 mx-lg-5"
+              type="button"
+              to={`/`}
+            >
+              Sign out
+            </Link>
+          </form>
+        </div>
+      </nav>
+    );
+}
